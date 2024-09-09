@@ -86,3 +86,38 @@ body {
 .relogio span.tempo {
     font-size: 20px;
 }
+
+```
+## ⚙️ Funcionalidade
+
+A lógica do relógio digital é implementada no arquivo `assets/js/script.js`, que usa **JavaScript** para atualizar o relógio em tempo real. O script obtém a hora atual, formata os valores de horas, minutos e segundos, e os atualiza a cada segundo na interface.
+
+### 🔧 Principais Funcionalidades:
+
+- **Atualização Automática**: Atualiza a hora em intervalos de 1 segundo.
+- **Formatação**: Garante que horas, minutos e segundos sempre tenham dois dígitos.
+- **Interface Intuitiva**: Exibição clara e destacada da hora atual.
+
+### 📜 Exemplo de JavaScript
+
+```javascript
+const horas = document.getElementById('horas');
+const minutos = document.getElementById('minutos');
+const segundos = document.getElementById('segundos');
+
+const relogio = setInterval(function time() {
+    let dateToday = new Date();
+    let hr = dateToday.getHours();
+    let min = dateToday.getMinutes();
+    let s = dateToday.getSeconds();
+
+    if (hr < 10) hr = '0' + hr;
+    if (min < 10) min = '0' + min;
+    if (s < 10) s = '0' + s;
+
+    horas.textContent = hr;
+    minutos.textContent = min;
+    segundos.textContent = s;
+}, 1000); // Atualiza a cada segundo
+
+``
