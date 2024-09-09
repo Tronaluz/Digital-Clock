@@ -86,39 +86,3 @@ body {
 .relogio span.tempo {
     font-size: 20px;
 }
-
-⚙️ Funcionalidade
-
-O comportamento do relógio digital é definido no arquivo assets/js/script.js. O código JavaScript atualiza a exibição do relógio em tempo real.
-Exemplo de JavaScript
-
-const horas = document.getElementById('horas');
-const minutos = document.getElementById('minutos');
-const segundos = document.getElementById('segundos');
-
-const relogio = setInterval(function time() {
-    let dateToday = new Date();
-    let hr = dateToday.getHours();
-    let min = dateToday.getMinutes();
-    let s = dateToday.getSeconds();
-
-    if (hr < 10) hr = '0' + hr;
-    if (min < 10) min = '0' + min;
-    if (s < 10) s = '0' + s;
-
-    horas.textContent = hr;
-    minutos.textContent = min;
-    segundos.textContent = s;
-}, 1000); // Atualiza a cada segundo
-
-O código utiliza a função setInterval para atualizar a hora a cada segundo. Ele obtém a hora atual usando o objeto Date, formata as horas, minutos e segundos para garantir que sempre tenham dois dígitos e atualiza o conteúdo dos elementos HTML correspondentes.
-
-🤝 Contribuição
-
-Sinta-se à vontade para contribuir com melhorias ou correções. Se você deseja contribuir, siga estas etapas:
-
-    Faça um fork do repositório.
-    Crie uma nova branch (git checkout -b minha-nova-feature).
-    Faça suas alterações e faça commit (git commit -am 'Adiciona nova feature').
-    Envie para o repositório remoto (git push origin minha-nova-feature).
-    Abra um Pull Request.
