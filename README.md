@@ -1,33 +1,33 @@
-Relógio Digital
+🕒 Relógio Digital
 
 ![Print](https://user-images.githubusercontent.com/84548221/201499100-03685ad7-340c-4eac-9d10-00649747d7ec.PNG)
 
 Um simples projeto de relógio digital criado com HTML, CSS e JavaScript.
-Descrição
+📜 Descrição
 
-Este projeto é um relógio digital básico que exibe a hora atual em horas, minutos e segundos. Utiliza HTML para a estrutura, CSS para o estilo e JavaScript para a funcionalidade.
-Estrutura do Projeto
+Este projeto é um relógio digital básico que exibe a hora atual em horas, minutos e segundos. Utiliza HTML para a estrutura, CSS para o estilo e JavaScript para a funcionalidade. É uma aplicação web simples que demonstra como criar uma interface de relógio funcional e estilizada.
+🗂️ Estrutura do Projeto
 
 O projeto é composto pelos seguintes arquivos:
 
-    index.html: O arquivo HTML que estrutura o relógio digital.
-    assets/css/style.css: O arquivo CSS que estiliza o relógio digital.
-    assets/js/script.js: O arquivo JavaScript que atualiza o relógio em tempo real.
+    index.html: Estrutura HTML do relógio digital.
+    assets/css/style.css: Estilo CSS do relógio digital.
+    assets/js/script.js: Código JavaScript que atualiza o relógio em tempo real.
 
-Instalação
+🚀 Instalação
 
 Não é necessário instalar nada para rodar este projeto. Basta abrir o arquivo index.html em um navegador moderno.
-Uso
+💻 Uso
 
     Abra o arquivo index.html em seu navegador para visualizar o relógio digital em ação.
     O relógio será atualizado automaticamente para mostrar a hora atual.
 
-Estilo
+🎨 Estilo
 
-O estilo do relógio digital é definido no arquivo assets/css/style.css. As principais características incluem:
+O estilo do relógio digital é definido no arquivo assets/css/style.css. Abaixo estão algumas das principais características:
 
     Fonte: Open Sans, importada do Google Fonts.
-    Fundo da Página: Um gradiente linear que vai do laranja claro ao vermelho.
+    Fundo da Página: Gradiente linear que vai do laranja claro ao vermelho.
     Relógio: Exibido com três divisões (Horas, Minutos e Segundos) com fundo escuro e texto branco.
     Sombras e Bordas: Sombras e bordas arredondadas para um efeito moderno e limpo.
 
@@ -87,7 +87,7 @@ body {
     font-size: 20px;
 }
 
-Funcionalidade
+⚙️ Funcionalidade
 
 O comportamento do relógio digital é definido no arquivo assets/js/script.js. O código JavaScript atualiza a exibição do relógio em tempo real.
 Exemplo de JavaScript
@@ -117,7 +117,7 @@ const relogio = setInterval(function time() {
 }, 1000); // Atualiza a cada segundo
 
 O código utiliza a função setInterval para atualizar a hora a cada segundo. Ele obtém a hora atual usando o objeto Date, formata as horas, minutos e segundos para garantir que sempre tenham dois dígitos e atualiza o conteúdo dos elementos HTML correspondentes.
-Contribuição
+🤝 Contribuição
 
 Sinta-se à vontade para contribuir com melhorias ou correções. Se você deseja contribuir, siga estas etapas:
 
